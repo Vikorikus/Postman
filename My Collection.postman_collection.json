@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "239db165-0ab3-44f0-be4b-25d61be77e83",
+		"name": "My Collection",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48759540",
+		"_collection_link": "https://vikorikus-7516790.postman.co/workspace/Vikorikus's-Workspace~15556096-9ff3-4803-8502-9352a58193fe/collection/48759540-239db165-0ab3-44f0-be4b-25d61be77e83?action=share&source=collection_link&creator=48759540"
+	},
+	"item": [
+		{
+			"name": "kataUserPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"username\": \"PeterParkerFull\",\r\n    \"email\": \"PeterParkerFull@mail.com\",\r\n    \"password\": \"12345678\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blog-platform.kata.academy/api/users/",
+					"protocol": "https",
+					"host": [
+						"blog-platform",
+						"kata",
+						"academy"
+					],
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kataUserLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"aquaman@mail.com\",\r\n    \"password\": \"12345678\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blog-platform.kata.academy/api/users/login",
+					"protocol": "https",
+					"host": [
+						"blog-platform",
+						"kata",
+						"academy"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kataUserGetInfo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
